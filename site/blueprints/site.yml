@@ -55,3 +55,28 @@ columns:
   - width: 1/3
     sections:
       files: sections/files
+  - width: 1/1
+    fields:
+      socials:
+        label:
+          en: Social media accounts
+          de: Social Media Accounts
+        type: structure
+        columns:
+          platform:
+            width: 1/2
+          link:
+            width: 1/2
+        fields:
+          platform:
+            label:
+              en: Platform
+              de: Plattform
+            type: text
+            required: true
+          link:
+            label:
+              en: Link
+              de: Link
+            type: url
+            required: true
