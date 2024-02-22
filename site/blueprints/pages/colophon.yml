@@ -1,0 +1,55 @@
+title: Colophon Page
+
+icon: 💌
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      fields:
+        type: fields
+        fields:
+          text:
+            type: blocks
+            size: huge
+  footer:
+    width: 1/1
+    fields:
+      resources:
+        label:
+          en: Resources
+          de: Ressourcen
+        type: structure
+        columns:
+          title:
+            width: 1/4
+          link:
+            width: 1/4
+          category:
+            width: 1/4
+          license:
+            width: 1/4
+        fields:
+          title:
+            label:
+              en: Title
+              de: Titel
+            type: text
+            required: true
+          link:
+            label:
+              en: Link
+              de: Link
+            type: url
+            required: true
+          category:
+            label:
+              en: Category
+              de: Kategorie
+            type: text
+          license:
+            label:
+              en: License
+              de: Lizenz
+            type: text
+            required: true

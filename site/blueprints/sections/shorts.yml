@@ -1,0 +1,11 @@
+type: pages
+headline:
+  en: Latest Shorts
+  de: Aktuelle Shorts
+parent: site.page("shorts")
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: short
+empty: 
+  en: No shorts yet
+  de: Noch keine shorts angelegt
+sortBy: date desc

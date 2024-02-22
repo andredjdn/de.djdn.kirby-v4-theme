@@ -1,0 +1,25 @@
+type: group
+fields:
+  date:
+    label:
+      en: Date
+      de: Datum
+    type: date
+    time: true
+    default: now
+    required: true
+    placeholder:
+      en: Select a date…
+      de: Datum wählen…
+  author:
+    label:
+      en: Author
+      de: Author
+    type: users
+  tags:
+    label:
+      en: Tags
+      de: Tags
+    type: tags
+    options: query
+    query: site.index.pluck("tags", ",", true)

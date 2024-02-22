@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /impressum
+Disallow: /datenschutz
+Disallow: /feed
+Disallow: /notes.json

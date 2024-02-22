@@ -1,0 +1,14 @@
+type: pages
+headline:
+  en: Note drafts
+  de: Notizen Entwürfe
+parent: site.page("notes")
+info: "{{ page.date.toDate('d.m.Y') }}"
+template:
+  - note
+  - note.link
+status: draft
+empty:
+  en: No drafts yet
+  de: Keine Entwürfe angelegt
+sortBy: date desc

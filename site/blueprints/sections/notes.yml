@@ -1,0 +1,14 @@
+type: pages
+headline:
+  en: Notes
+  de: Notizen
+parent: site.page("notes")
+info: "{{ page.date.toDate('d.m.Y') }}"
+template:
+  - note
+  - note.link
+status: published
+empty:
+  en: No notes yet
+  de: Keine Notizen vorhanden
+sortBy: date desc

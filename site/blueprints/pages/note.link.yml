@@ -1,0 +1,54 @@
+title: Note (Link)
+
+pages: false
+
+num: date
+
+icon: 📑
+
+status:
+  draft:
+    label:
+      en: Draft
+      de: Entwurf
+    text: Diese Notiz befindet sich noch im Entwurfsmodus.
+  listed:
+    label:
+      en: Published
+      de: Veröffentlicht
+    text: Diese Notiz ist online gelistet.
+
+columns:
+  - width: 2/3
+    fields:
+      link:
+        label:
+          en: Link
+          de: Link
+        type: url
+        required: true
+      alt:
+        label:
+          en: Alt-Text
+          de: Alt-Text
+        type: text
+      text:
+        label:
+          en: Text
+          de: Text
+        type: textarea
+        size: large
+        required: true
+
+  - width: 1/3
+    fields:
+      extends: fields/note.meta
+  - width: 1/1
+    sections:
+      images:
+        headline:
+          en: Images
+          de: Bilder
+        type: files
+        template: image
+        info: "{{ file.dimensions }}"

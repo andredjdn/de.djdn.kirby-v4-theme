@@ -1,0 +1,57 @@
+title:
+  en: Site
+  de: Webseite
+
+options:
+  delete:
+    admin: true
+    editor: false
+
+columns:
+  - width: 2/3
+    sections:
+      stats:
+        headline:
+          en: Stats
+          de: Statistik
+        type: stats
+        size: small
+        reports:
+          - label:
+              de: Notizen
+              en: Notes
+            value: "{{ site.pages.find('notes', 'notes.link').children.count }}"
+            icon: book
+          - label:
+              de: Shorts
+              en: Shorts
+            value: "{{ site.pages.find('shorts').children.count }}"
+            icon: megaphone
+          - label:
+              de: Seiten
+              en: Pages
+            value: "{{ site.children.count }}"
+            icon: page
+      drafts: sections/drafts
+      notes: sections/notes
+  - width: 1/3
+    sections:
+      pages:
+        type: pages
+        headline:
+          en: Pages
+          de: Seiten
+        templates:
+          - default
+          - colophon
+          - legal
+          - error
+        layout: list
+        sortable: true
+        sortBy: title
+  - width: 2/3
+    sections:
+      shorts: sections/shorts
+  - width: 1/3
+    sections:
+      files: sections/files

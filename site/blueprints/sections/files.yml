@@ -1,0 +1,8 @@
+type: files
+headline:
+  en: Files
+  de: Dateien
+parent: site
+empty:
+  en: No files yet
+  de: Bisher keine Dateien
