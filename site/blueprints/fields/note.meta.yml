@@ -11,11 +11,23 @@ fields:
     placeholder:
       en: Select a date…
       de: Datum wählen…
-  author:
+  pinned:
     label:
-      en: Author
-      de: Author
-    type: users
+      en: Pin
+      de: Anpinnen
+    type: toggle
+    text:
+        - "no"
+        - "yes"
+  cover:
+    label:
+      en: Cover
+      de: Titelbild
+    type: files
+    multiple: false
+    query: page.images.template('image')
+    uploads:
+      template: image
   tags:
     label:
       en: Tags
@@ -23,3 +35,8 @@ fields:
     type: tags
     options: query
     query: site.index.pluck("tags", ",", true)
+  author:
+    label:
+      en: Author
+      de: Autor
+    type: users

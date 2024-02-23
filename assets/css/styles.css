@@ -29,7 +29,7 @@
     Primary Accent: rgb(32, 94, 166)
     Secondary Accent: rgb(160, 47, 111)
     Primary Highlight: rgb(67, 133, 190)
-    Secondary Highlicht: rgb(206, 93, 151)
+    Secondary Highlight: rgb(206, 93, 151)
     Red: rgb(175, 48, 41)
     Yellow: rgb(173, 131, 1)
     Green: rgb(102, 128, 11)
@@ -206,14 +206,6 @@ time a:hover,
 time a:active {
     color: rgb(183, 181, 172);
     background: none;
-}
-
-time img,
-h1 img {
-    display: inline;
-    margin: 0 5px 0 0;
-    filter: brightness(0) saturate(100%) invert(84%) sepia(5%) saturate(363%)
-        hue-rotate(12deg) brightness(88%) contrast(85%);
 }
 
 a:link,
@@ -444,6 +436,37 @@ a:hover:has(img.logo) {
 #teaser-posts li,
 #posts li {
     list-style: none;
+}
+
+.pinned-note {
+    margin-bottom: 2.5em;
+    background-color: rgb(32, 94, 166);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.7em;
+}
+
+.pinned-note h4,
+.pinned-note time {
+    display: inline-block;
+    margin: 25px;
+    padding: 0.25em 0.5em;
+    color: rgb(183,181,172);
+    background: rgb(242,240,229);    
+    border-radius: 7px;
+}
+
+.pinned-note h4 {
+    margin-top: 50px;
+    font-size: 1.6em;
+}
+
+h1 img,
+.pinned-note img,
+.short time img {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(5%) saturate(363%) hue-rotate(12deg) brightness(88%) contrast(85%);
 }
 
 #teaser-shorts {
@@ -737,6 +760,21 @@ figcaption .copyright {
         border-bottom: 0.1em solid rgb(206, 205, 195);
     }
 
+    .pinned-note h4,
+    .pinned-note time {
+        background: rgb(28,27,26);    
+    }
+
+    .pinned-note time {
+        color:rgb(87,86,83);
+    }
+
+    h1 img,
+    .pinned-note img,
+    .short time img {
+        filter: brightness(0) saturate(100%) invert(34%) sepia(1%) saturate(2967%) hue-rotate(7deg) brightness(83%) contrast(74%);
+    }
+
     article.short {
         background-color: rgb(28, 27, 26);
     }
@@ -781,11 +819,6 @@ figcaption .copyright {
     time a:hover,
     time a:active {
         color: rgb(87, 86, 83);
-    }
-
-    time img {
-        filter: invert(35%) sepia(0%) saturate(1424%) hue-rotate(296deg)
-            brightness(105%) contrast(127%);
     }
 
     li::marker {
