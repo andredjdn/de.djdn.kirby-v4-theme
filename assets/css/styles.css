@@ -446,6 +446,10 @@ a:hover:has(img.logo) {
     border-radius: 0.7em;
 }
 
+.pinned-note:last-of-type {
+    margin-bottom: 4em;
+}
+
 .pinned-note h4,
 .pinned-note time {
     display: inline-block;
@@ -457,8 +461,7 @@ a:hover:has(img.logo) {
 }
 
 .pinned-note h4 {
-    margin-top: 50px;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 h1 img,
@@ -758,6 +761,10 @@ figcaption .copyright {
 
     td {
         border-bottom: 0.1em solid rgb(206, 205, 195);
+    }
+
+    .pinned-note {
+        background-color: rgb(206, 93, 151);
     }
 
     .pinned-note h4,
