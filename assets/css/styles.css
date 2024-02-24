@@ -33,9 +33,11 @@
     Red: rgb(175, 48, 41)
     Yellow: rgb(173, 131, 1)
     Green: rgb(102, 128, 11)
+    Blue: rgb(32, 94, 166)
     Red Highlight: rgb(209, 77, 65)
     Yellow Hightlight: rgb(208, 162, 21)
     Green Hightlight: rgb(135, 154, 57)
+    Blue Highlight: rgb(67, 133, 190)
     UI Primary: rgb(230, 228, 217)
     UI Secondry: rgb(206, 205, 195)
 */
@@ -54,9 +56,11 @@
     Red: rgb(209, 77, 65)
     Yellow: rgb(208, 162, 21)
     Green: rgb(135, 154, 57)
+    Blue: rgb(67, 133, 190)
     Red Highlight: rgb(175, 48, 41)
     Yellow Hightlight: rgb(173, 131, 1)
     Green Hightlight: rgb(102, 128, 11)
+    Blue Highlight: rgb(32, 94, 166)
     UI Primary: rgb(40, 39, 38)
     UI Secondary: rgb(64, 62, 60)
 */
@@ -697,6 +701,39 @@ figcaption .copyright {
     color: rgb(183, 181, 172);
 }
 
+.message {
+    padding: 20px;
+    border-radius: 0.7em;
+    margin-bottom: 1.9rem;
+}
+
+.message span {
+    display: inline-block;
+    align-self:self-start;
+    margin-right: 20px;
+    font-size: 1.75em;
+}
+
+.message .text {
+    display: inline-block;
+}
+
+.message .text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.message.info {
+    background: rgb(67, 133, 190);
+}
+
+.message.warning {
+    background: rgb(208, 162, 21);
+}
+
+.message.danger {
+    background: rgb(209, 77, 65);
+}
+
 /* Darkmode
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (prefers-color-scheme: dark) {
@@ -854,6 +891,18 @@ figcaption .copyright {
 
     .linklist li span {
         color: rgb(87, 86, 83);
+    }
+
+    .message.info {
+        background: rgb(32, 94, 166);
+    }
+    
+    .message.warning {
+        background: rgb(173, 131, 1);
+    }
+    
+    .message.danger {
+        background: rgb(175, 48, 41);
     }
 }
 

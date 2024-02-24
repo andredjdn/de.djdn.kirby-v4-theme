@@ -33,10 +33,18 @@ columns:
           de: Alt-Text
         type: text
       text:
-        label:
-          en: Text
-          de: Text
-        type: textarea
+        type: blocks
+        fieldsets:
+          - heading
+          - text
+          - message
+          - quote
+          - table
+          - markdown
+          - code
+          - list
+          - line
+          - image
         size: large
         required: true
 

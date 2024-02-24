@@ -29,6 +29,17 @@ columns:
     fields:
       text:
         type: blocks
+        fieldsets:
+          - heading
+          - text
+          - message
+          - quote
+          - table
+          - markdown
+          - code
+          - list
+          - line
+          - image
         size: large
         required: true
   - width: 1/3

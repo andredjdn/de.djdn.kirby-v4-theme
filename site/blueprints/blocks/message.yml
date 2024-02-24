@@ -1,0 +1,40 @@
+# /site/blueprints/blocks/message.yml
+name:
+  en: Message
+  de: Nachricht
+icon: info
+fields:
+  class:
+    label:
+      en: Type
+      de: Typ
+    width: 2/3
+    type: select
+    required: true
+    options:
+      info:
+        en: Information
+        de: Information
+      warning:
+        en: Warning
+        de: Warnung
+      danger:
+        en: Danger
+        de: Gefahr
+  symbol:
+    label:
+      en: Symbol
+      de: Symbol
+    width: 1/3
+    type: text
+    required: true
+    default: 👉
+    minlength: 1
+    maxlength: 2
+  text:
+    label:
+      en: Content
+      de: Inhalt
+    width: 1/1
+    type: textarea
+    required: true
