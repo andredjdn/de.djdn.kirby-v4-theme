@@ -8,6 +8,7 @@
                     <header>
                         <time datetime="<?= $page->date() ?>"><?= $page->date()->toDate('Y-m-d') ?></time>
                         <h1><?= $page->title()->html() ?></h1>
+                        <?php snippet('cover') ?>
                     </header>
                     <div class="content">
                         <?= $page->text()->toBlocks() ?>

@@ -8,6 +8,7 @@
                     <header>
                         <time datetime="<?= $page->date() ?>"><?= $page->date()->toDate('Y-m-d') ?></time>
                         <h1 class="flex"><img src="<?= url('assets/icons/arrow-right-up-line.svg') ?>" width="50" height="50" arial-hidden="true"><a href="<?= $page->link() ?>" alt="<?= $page->alt() ?>"><?= $page->title()->html() ?></a></h1>
+                        <?php snippet('cover') ?>
                     </header>
                     <div class="content">
                         <?= $page->text()->toBlocks() ?>
