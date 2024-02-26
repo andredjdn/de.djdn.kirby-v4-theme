@@ -664,6 +664,37 @@ figcaption .copyright {
     font-style: italic;
 }
 
+.cover {
+    border-radius: 0.7em;
+    background: rgb(242, 240, 229);
+}
+
+.cover figcaption {
+    padding: 0 1rem 0.5rem 1rem;
+    font-style: inherit;
+    font-size: 0.8em;
+    text-align: inherit;
+}
+
+.cover figcaption div {
+    margin-right: 2rem;
+    align-self: self-start;
+}
+
+.cover figcaption a:link,
+.cover figcaption a:visited {
+    color: rgb(183,181,172);
+}
+
+.cover figcaption a:not(
+    [href*="djdn.de"],
+    [href*="localhost"],
+    [href^="#"],
+    [href^="/"]
+)::after {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(10%) saturate(186%) hue-rotate(12deg) brightness(101%) contrast(89%);
+}
+
 .tolower {
     text-transform: lowercase;
 }
@@ -840,6 +871,24 @@ figcaption .copyright {
         )::after {
         filter: brightness(0) saturate(100%) invert(95%) sepia(9%)
             saturate(176%) hue-rotate(17deg) brightness(87%) contrast(89%);
+    }
+
+    .cover {
+        background: rgb(28,27,26);
+    }
+    
+    .cover figcaption a:link,
+    .cover figcaption a:visited {
+        color: rgb(87,86,83);
+    }
+    
+    .cover figcaption a:not(
+        [href*="djdn.de"],
+        [href*="localhost"],
+        [href^="#"],
+        [href^="/"]
+    )::after {
+        filter: brightness(0) saturate(100%) invert(37%) sepia(1%) saturate(2283%) hue-rotate(4deg) brightness(88%) contrast(91%);
     }
 
     .secondary {

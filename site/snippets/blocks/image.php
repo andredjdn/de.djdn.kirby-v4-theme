@@ -30,5 +30,5 @@ if ($block->location() == 'web') {
                 <?= $caption ?>
             </figcaption>
         <?php endif ?>
-        </figure>
-    <?php endif ?>
+    </figure>
+<?php endif ?>

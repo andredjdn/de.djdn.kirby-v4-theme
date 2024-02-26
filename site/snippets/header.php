@@ -11,6 +11,8 @@
 
     <link rel="shortcut icon" href="<?= $kirby->url('assets') ?>/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="<?= $kirby->url('assets') ?>/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $kirby->url('assets') ?>/img/apple-touch-icon.png">
+
     <link rel="alternate" type="application/json" title="Aktuelle Notes" href="<?= site()->url() ?>/notes.json">
     <link rel="alternate" type="application/rss+xml" title="Aktuelle Notes" href="<?= site()->url() ?>/feed">
     <link rel="preload" href="<?= $kirby->url('assets') ?>/fonts/HubotSans.woff2" as="font" type="font/woff2" crossorigin>

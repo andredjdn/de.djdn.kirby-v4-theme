@@ -27,17 +27,22 @@ columns:
           photographer:
             label: Photogapher
             type: text
-            width: 2/3
+            width: 1/2
+          tool:
+            label: Tool
+            type: text
+            width: 1/2
+          link:
+            label: Link
+            type: url
+            width: 1/2
           license:
             label: License
             type: select
-            width: 1/3
+            width: 1/2
             options:
               - Unsplash
               - CC BY 4.0
               - CC BY-SA 4.0
               - CC BY-NC 4.0
               - CC BY-ND 4.0
-          link:
-            label: Link
-            type: url

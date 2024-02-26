@@ -1,5 +1,18 @@
+User-agent: Mediapartners-Google*
+Disallow:
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
 User-agent: *
 Disallow: /impressum
 Disallow: /datenschutz
+Disallow: /search
 Disallow: /feed
 Disallow: /notes.json
