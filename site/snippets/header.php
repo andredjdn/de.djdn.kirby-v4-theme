@@ -27,7 +27,7 @@
 
     <meta property="og:image" content="<?= e($page->template()->name() === 'note', $page->url() . '.png', $kirby->url('assets') . '/img/og-default.png') ?>">
 
-    <title><?= $site->title() ?> &middot; <?= $page->title() ?></title>
+    <title><?php if (!$page->isHomePage()) : ?><?= $page->title() ?> &mdash; <?php endif ?><?= $site->title() ?></title>
 
     <?= css(['assets/css/pure-base.min.css', '@auto']) ?>
     <?= css(['assets/css/pure-grid.min.css', '@auto']) ?>

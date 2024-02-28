@@ -1,0 +1,38 @@
+name:
+  en: Table (contact)
+  de: Tabelle (Kontakte)
+icon: menu
+preview: table
+fields:
+  rows:
+    label:
+      en: Entries
+      de: Einträge
+    type: structure
+    columns:
+      value:
+        width: 1/3
+      key:
+        width: 1/3
+      fingerprint:
+        width: 1/3
+    fields:
+      value:
+        label:
+          en: Value
+          de: Wert
+        type: text
+        required: true
+        default: "(email: mail@example.com text: Mail)"
+      key:
+        label:
+          en: Public Key
+          de: öffentl. Schlüssel
+        type: text
+        default: "(link: https://example.com/pgp-key.txt text: PGP Key)"
+      fingerprint:
+        label:
+          en: Fingerprint
+          de: Fingerprint
+        type: text
+      

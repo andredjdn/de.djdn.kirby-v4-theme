@@ -47,3 +47,5 @@ Icon
 # Meta
 # ---------------
 .editorconfig
+security.txt
+/assets/pgp

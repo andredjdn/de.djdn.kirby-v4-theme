@@ -257,6 +257,13 @@ td {
     border-bottom: 0.1em solid rgb(183, 181, 172);
 }
 
+td code {
+    display: inline;
+    border: 0;
+    background: none;
+    font-size: 0.9em;
+}
+
 section ol,
 section ul {
     padding-left: 3em;
@@ -602,7 +609,7 @@ li::marker {
 }
 
 .tags.primary li {
-    background: rgb(183, 181, 172);
+    background: rgb(139, 126, 200);
     color: rgb(16, 15, 15);
 }
 

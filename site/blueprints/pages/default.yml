@@ -11,6 +11,18 @@ columns:
         fields:
           text:
             type: blocks
+            fieldsets:
+              - heading
+              - text
+              - message
+              - quote
+              - table
+              - table-contact
+              - markdown
+              - code
+              - list
+              - line
+              - image
             size: huge
   sidebar:
     width: 1/3
