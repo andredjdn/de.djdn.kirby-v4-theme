@@ -44,6 +44,10 @@ Icon
 # ---------------
 /content/*
 
+# Files
+# ---------------
+*.pxd
+
 # Meta
 # ---------------
 .editorconfig
