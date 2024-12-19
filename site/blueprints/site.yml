@@ -1,8 +1,14 @@
 title:
   en: Site
   de: Webseite
+description:
+  en: desc
+  de: Beschreibung
 
 options:
+  update:
+    admin: true
+    editor: false
   delete:
     admin: true
     editor: false
